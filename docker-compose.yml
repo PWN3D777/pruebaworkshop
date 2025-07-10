@@ -50,7 +50,7 @@ services:
     image: "telegraf:1.33"
     container_name: telegraf
     volumes:
-      - ./data/telegraf/telegraf.conf:/etc/telegraf/telegraf.conf:ro
+      - /opt/iot_conf/telegraf.conf:/etc/telegraf/telegraf.conf:ro
     depends_on:
       - emqx
       - influxdb
