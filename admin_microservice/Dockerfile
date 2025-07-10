@@ -19,6 +19,6 @@ FROM alpine
 #Agregamos el openjdk17
 RUN apk add openjdk17
 
-COPY  --from=maven /admin_microservice/target/admin-0.0.1-SNAPSHOT.jar app.jar
+COPY  --from=maven /pruebaadmin/target/admin-0.0.1-SNAPSHOT.jar app.jar
 
 ENTRYPOINT [ "java","-jar","/app.jar" ]
