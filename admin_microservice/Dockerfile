@@ -5,7 +5,7 @@ FROM maven:3.9.9-eclipse-temurin-17-alpine AS maven
 RUN apk add git
 
 #Clonamos el repositodiro data_microservice
-RUN git clone https://github.com/UIS-IoT-Smart-Campus/admin_microservice
+RUN git clone https://github.com/TRCIP777/pruebaadmin
 
 #Definimos el directorio de trabajo
 WORKDIR /admin_microservice
