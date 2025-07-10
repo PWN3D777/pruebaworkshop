@@ -20,7 +20,7 @@ FROM alpine
 RUN apk add openjdk17
 
 #Copia el jar ejecutable de la imagen auxiliar alias maven
-COPY  --from=maven /data_microservice/target/messages-0.0.1-SNAPSHOT.jar app.jar
+COPY  --from=maven /pruebadata/target/messages-0.0.1-SNAPSHOT.jar app.jar
 
 #Arrancamos el microservicio
 ENTRYPOINT [ "java","-jar","/app.jar" ]
