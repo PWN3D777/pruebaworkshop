@@ -8,7 +8,7 @@ RUN apk add git
 RUN git clone https://github.com/TRCIP777/pruebadata
 
 #Definimos el directorio de trabajo
-WORKDIR /data_microservice
+WORKDIR ./
 
 #Ejecutamos los comandos clean y package propios de maven para generar el jar
 RUN mvn clean package 
